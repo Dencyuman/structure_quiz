@@ -14,6 +14,7 @@ let correct; //正解メッセージ
 let incorrect; //不正解メッセージ
 
 let correctAnswer; //答え表示機能()
+let correctAnswerHint;
 
 let canvas; //canvasタグ本体
 let ctx; //context
@@ -183,11 +184,14 @@ let checkAnswer = function(){
     userAnswer = document.getElementById("answer").value;
     correct = document.getElementById("correct");
     incorrect = document.getElementById("incorrect");
+    correctAnswerHint = document.getElementById("correctAnswerHint");
     if(userAnswer == trueAnswer){
         correct.style.display = "block";
         incorrect.style.display = "none";
+        correctAnswerHint.style.display = "none";
     }else{
         correct.style.display = "none";
         incorrect.style.display = "block";
+        correctAnswerHint.style.display = "block";
     }
 }
