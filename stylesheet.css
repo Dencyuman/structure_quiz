@@ -1,0 +1,49 @@
+.inputBox{
+    height:20px;
+    width:100px;
+    font-size:16px;
+    font-weight: bold;
+}
+
+.btn{
+    margin-right: 10px;
+    height:40px;
+    width:150px;
+    font-size: 20px;
+}
+
+.number{
+    background: linear-gradient(transparent 50%, rgb(255, 208, 0) 70%);
+    font-weight: bold;
+}
+
+h1{
+    margin:0;
+}
+
+p{
+    font-size: 20px;
+}
+
+body{
+    text-align: center;
+    padding:10px 0 30px 0;
+}
+
+.correctAnswerHint{
+    display: none;
+}
+
+.result{
+    display: none;
+}
+
+.red{
+    color: rgb(255, 0, 85);
+    background: linear-gradient(transparent 50%, rgba(255, 0, 85, 0.4) 70%);
+}
+
+.blue{
+    color: rgb(9, 124, 255);
+    background: linear-gradient(transparent 50%, rgba(9, 124, 255, 0.4) 70%);
+}

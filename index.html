@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>構造計算クイズ</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="responsible/stylesheet" href="responsible.css">
+    <script type="text/javascript" src="function.js?canvas.js"></script>
+    
+</head>
+<body>
+    <h1>構造計算クイズ</h1>
+        <p>
+            長さ<span class="number" id="number1"></span>m の単純梁に、
+            <span class="number" id="number2"></span>kNの大きさの集中荷重をかけるとき、<br>支点Aの反力を
+            <span class="number" id="number3"></span>kNにするには、左端から何mの位置に載荷すればよいか。
+            <br>
+            小数が発生する場合は、小数第2位を四捨五入して小数第1位まで答えなさい。
+        </p>
+        <canvas id="canvas" width="700" height="200"></canvas>
+        <h2 id="correct" class="result"><span class="red">正解</span>だよ！おめでとう！</h2>
+        <h2 id="incorrect" class="result"><span class="blue">不正解</span>www<br>さてはバカだなお前www</h2>
+        <p>左端から <input class="inputBox" type="text" id="answer" placeholder="###.#">m</p>
+        <p　class="correctAnswerHint">※答えは<span id="correctAnswer"></span>m!</p>
+        <input class="btn" type="button" value="答え合わせ" onclick="checkAnswer();">
+        <input class="btn" type="button" value="別の問題" onclick="window.location.reload();">
+
+</body>
+</html>
