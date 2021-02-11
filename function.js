@@ -66,7 +66,7 @@ let addValue = function(){
 
 let calculateAnswer = function(){
     //正答計算
-    trueAnswer = Math.round((stress * length / power) * 10) / 10 ;
+    trueAnswer = Math.round((length - (stress * length / power)) * 10) / 10 ;
     // alert(trueAnswer);
 }
 
